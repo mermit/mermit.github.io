@@ -67,7 +67,7 @@ ul {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px), {
 
 	.navbar-flexbox {
 		display: flex;
@@ -130,7 +130,7 @@ ul {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
 
 	.navbar-flexbox {
 		display: flex;
