@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background-color: white;
+    font-family: monospace;
+    font-size: 1.2em;
+
+}
+
+.navbar-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 100%;
+    justify-content: flex-start;
+    overflow: hidden;
+    
+}
+
+.navbar-flexbox p {
+    color: black;
+    padding: 25px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.2em;
+
+}
+
+.navbar-flexbox .active {
+    background-color: #1b9600;
+    color: white;
+}
+
+.navbar-flexbox p:hover {
+    background-color: #178200;
+    color: white;
+}
+
+.navbar-flexbox #nav-logo {
+    width:330px;
+    max-width: 85vw;
+    height: 100%;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+
+.backdrop {
+    height: 35vh;
+    background-image: url("lib/IMG/backdrop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 5%;
+    position: relative;
+    bottom: 20px;
+ 
+}
+
+.down{
+    text-align: center;
+    width: 450px;
+    max-width: 95%;
+    margin: 0 auto;
+    
+  
+}
+
+.down #title {
+    color: #1b9600 ;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+    max-width: 95%;
+}
+
+.down p {
+    border: 2px dotted #1b9600;
+    padding: 20px 20px;
+}
+
+.down h2 {
+    font-size: 2em;
+}
+
+.footer-flexbox {
+    display: flex;
+    flex-direction: column;
+    background-color: #1b9600;
+    margin-top: auto;
+    height: 3em;
+}

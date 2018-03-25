@@ -1,0 +1,19 @@
+{
+  "htmlFiles": [
+    {
+      "fileId": "1OLPrZaQMlRLUdXy5TFPowTLBuKxMW7zl",
+      "contentType": "text/html",
+      "name": "index.html",
+      "path": "1xhaGdTeQdOdyBoQFej4KwlbyWhN8V4E3/"
+    }
+  ],
+  "cssFiles": [
+    {
+      "fileId": "1EUuHOrH5jUEEC_CoK9FjB0tkWMpr3dKj",
+      "contentType": "text/css",
+      "name": "style.css",
+      "path": "1xhaGdTeQdOdyBoQFej4KwlbyWhN8V4E3/"
+    }
+  ],
+  "javascriptFiles": []
+}
