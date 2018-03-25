@@ -16,32 +16,6 @@ body {
     color: white;
 }
 
-.down {
-    text-align: center;
-    width: 450px;
-    max-width: 95%;
-    margin: 0 auto;
-    
-  
-}
-
-.down #title {
-    color: #1b9600 ;
-    font-weight: bold;
-    font-family: monospace;
-    font-size: 4em;
-    max-width: 95%;
-}
-
-.down p {
-    border: 2px dotted #1b9600;
-    padding: 20px 20px;
-}
-
-.down h2 {
-    font-size: 2em;
-}
-
 .footer-flexbox {
     display: flex;
     flex-direction: column;
@@ -119,6 +93,32 @@ body {
 	 
 	}
 	
+	.down {
+    text-align: center;
+    width: 450px;
+    max-width: 95%;
+    margin: 0 auto;
+  
+    }
+	
+	.down #title {
+    color: #1b9600 ;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+    max-width: 95%;
+    }
+    
+    .down p {
+        border: 2px dotted #1b9600;
+        padding: 20px 20px;
+        font-size: 1em;
+    }
+    
+    .down h2 {
+        font-size: 2em;
+    }
+	
 }
 
 
@@ -188,6 +188,32 @@ body {
 		display: none;
 	 
 	}
+	
+	.down {
+    text-align: center;
+    width: 800px;
+    max-width: 95%;
+    margin: 0 auto;
+  
+    }
+	
+	.down #title {
+    color: #1b9600 ;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 5em;
+    max-width: 95%;
+    }
+    
+    .down p {
+        border: 2px dotted #1b9600;
+        padding: 20px 20px;
+        font-size: 1.5em;
+    }
+    
+    .down h2 {
+        font-size: 2.5em;
+    }
 
 }
 
@@ -255,5 +281,31 @@ body {
 		display: none;
 	 
 	}
+	
+	.down {
+    text-align: center;
+    width: 550px;
+    max-width: 95%;
+    margin: 0 auto;
+  
+    }
+	
+	.down #title {
+    color: #1b9600 ;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4.5em;
+    max-width: 95%;
+    }
+    
+    .down p {
+        border: 2px dotted #1b9600;
+        padding: 20px 20px;
+        font-size: 1.2em;
+    }
+    
+    .down h2 {
+        font-size: 2.4em;
+    }
 
 }
