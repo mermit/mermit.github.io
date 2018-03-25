@@ -1,8 +1,9 @@
 $( document ).ready(function() {
-    
-    setInterval(function() {
-      navbarswitchdirection();
-}, 20);
+    if($(".flex-right").css("flex-direction") == "row") {
+        setInterval(function() {
+            navbarswitchdirection();
+        }, 20);
+    }
 
 function navbarswitchdirection() {
 
