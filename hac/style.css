@@ -6,31 +6,17 @@ body {
     min-height: 100vh;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding-bottom: 20px;
-    overflow: hidden;
-    background-color: white;
-    font-family: monospace;
-    font-size: 1.2em;
-
-}
-
-.navbar-flexbox .active {
+.navbar-flexbox .active.navitem {
     background-color: #1b9600;
     color: white;
 }
 
-.navbar-flexbox p:hover {
+.navbar-flexbox .navitem:hover {
     background-color: #178200;
     color: white;
 }
 
-
-
-
-.down{
+.down {
     text-align: center;
     width: 450px;
     max-width: 95%;
@@ -81,22 +67,29 @@ ul {
 		
 	}
 
-	.navbar-flexbox p {
+	.navbar-flexbox .navitem {
 		color: black;
-		padding: 25px 35px;
 		text-align: center;
 		text-decoration: none;
 		font-family: monospace;
 		font-size: 1.2em;
 		cursor: pointer;
+		padding: 25px 35px;
+		margin-bottom: 20px;
 
 	}
 
 	.navbar-flexbox #nav-logo {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.navbar-flexbox #nav-logo-container {
 		width:330px;
 		max-width: 85vw;
 		height: 100%;
 		position: relative;
+		margin-left: 10px;
 		margin-right: 20px;
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -150,7 +143,7 @@ ul {
 		
 	}
 
-	.navbar-flexbox p {
+	.navbar-flexbox .navitem {
 		color: black;
 		padding: 15px 35px;
 		text-align: center;
@@ -164,8 +157,13 @@ ul {
 		cursor: pointer;
 
 	}
-
+	
 	.navbar-flexbox #nav-logo {
+		width: 100%;
+		height: 100%;
+	}
+
+	.navbar-flexbox #nav-logo-container {
 		width: 95%;
 		max-width: 95vw;
 		height: 100%;
@@ -212,7 +210,7 @@ ul {
 		
 	}
 
-	.navbar-flexbox p {
+	.navbar-flexbox .navitem {
 		color: black;
 		padding: 15px 35px;
 		text-align: center;
@@ -226,8 +224,13 @@ ul {
 		cursor: pointer;
 
 	}
-
+	
 	.navbar-flexbox #nav-logo {
+		width: 100%;
+		height: 100%;
+	}
+
+	.navbar-flexbox #nav-logo-container {
 		width: 80%;
 		max-width: 80vw;
 		height: 100%;
