@@ -24,10 +24,8 @@ $navbarcontainer=$navbarcontainer+$(".navbar-flexbox").outerWidth();
 
 if($rightnavbarcontent>$navbarcontainer) {
 	$(".flex-right").css("flex-direction", "column");
-    $(".crew").css("flex-direction", "column");
 } else {
 	$(".flex-right").css("flex-direction", "row");
-    $(".crew").css("flex-direction", "row");
 }
 
 console.log($rightnavbarcontent);
