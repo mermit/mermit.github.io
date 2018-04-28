@@ -1,12 +1,18 @@
 $( document ).ready(function() {
-    if($(".flex-right").css("flex-direction") == "row") {
+    if($(".mobile").css("color") == "rgb(0, 0, 1)") {
         setInterval(function() {
-            navbarswitchdirection();
+            checkmobile();
         }, 20);
     }
+    
+function checkmobile() {
+    if($(".mobile").css("color") == "rgb(0, 0, 1)") {
+        navbarswitchdirection();
+    }
+}
 
 function navbarswitchdirection() {
-
+    
 var $rightnavbarcontent = 0;
 var $navbarcontainer = 0;
 $rightnavbarcontent=$rightnavbarcontent+$(".navhome").outerWidth();
@@ -18,8 +24,10 @@ $navbarcontainer=$navbarcontainer+$(".navbar-flexbox").outerWidth();
 
 if($rightnavbarcontent>$navbarcontainer) {
 	$(".flex-right").css("flex-direction", "column");
+    $(".crew").css("flex-direction", "column");
 } else {
 	$(".flex-right").css("flex-direction", "row");
+    $(".crew").css("flex-direction", "row");
 }
 
 console.log($rightnavbarcontent);

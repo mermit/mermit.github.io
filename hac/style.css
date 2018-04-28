@@ -1,4 +1,6 @@
 body {
+    overflow-x: hidden;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0px;
@@ -19,15 +21,68 @@ body {
 .footer-flexbox {
     display: flex;
     flex-direction: column;
-    background-color: #1b9600;
+    background-color: #178200;
     margin-top: auto;
     height: 3em;
 }
 
+.footer-flexbox p {
+        border: none;
+        padding: 0;
+        text-align: center;
+        color: white;
+}
 
+.crew {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+}
+    
+.down p {
+        border: 2px dotted #1b9600;
+        padding: 20px 20px;
+        border-radius: 10px;
+    }
+
+.down {
+        width: 94%;
+        padding-left: 3%;
+}
+
+.crewtitle {
+    flex: 0 0 100%;
+}
+
+.danial {
+        max-width: 90%;
+        text-align: center;
+        width: 450px;
+        margin: 0 auto;
+        padding: 0 4%;
+        position: relative;
+    }
+    
+.tim  {
+        max-width: 90%;
+        text-align: center;
+        width: 450px;
+        margin: 0 auto;
+        padding: 0 4%;
+        position: relative;
+    }
 
 
 @media only screen and (min-width: 1025px) {
+    
+    .mobile {
+        color: #000001;
+        display: none;
+    }
+    
+    .navbar-hamburger {
+        display: none;
+    }
 
 	.navbar-flexbox {
 		display: flex;
@@ -48,8 +103,11 @@ body {
 		font-family: monospace;
 		font-size: 1.2em;
 		cursor: pointer;
-		padding: 25px 35px;
+		padding: 30px 35px;
 		margin-bottom: 20px;
+        margin-left: 1px;
+        margin-right: 1px;
+		border-radius: 5px;
 
 	}
 
@@ -59,14 +117,14 @@ body {
 	}
 	
 	.navbar-flexbox #nav-logo-container {
-		width:330px;
+		width:180px;
 		max-width: 85vw;
 		height: 100%;
 		position: relative;
 		margin-left: 10px;
 		margin-right: 20px;
 		margin-top: 10px;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 		cursor: pointer;
 	}
 
@@ -84,39 +142,45 @@ body {
 
 	.backdrop {
 		height: 35vh;
-		background-image: url("lib/IMG/backdrop.jpg");
+		background-image: url("lib/IMG/backdrop_new.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center 5%;
+		background-position: center 35%;
 		position: relative;
 		bottom: 20px;
 	 
 	}
 	
-	.down {
+	.down{
+    display: block;
     text-align: center;
     width: 450px;
     max-width: 95%;
     margin: 0 auto;
+    position: relative;
   
     }
 	
-	.down #title {
+    .down #title {
     color: #1b9600 ;
     font-weight: bold;
     font-family: monospace;
     font-size: 4em;
-    max-width: 95%;
+    max-width: 100%;
+    margin-bottom: 0px;
     }
     
-    .down p {
-        border: 2px dotted #1b9600;
-        padding: 20px 20px;
-        font-size: 1em;
-    }
     
     .down h2 {
         font-size: 2em;
+        max-width: 100%;
+    }
+    
+     .down p {
+        border: 2px dotted #1b9600;
+        padding: 20px 20px;
+        font-size: 1em;
+        max-width: 100%;
     }
 	
 }
@@ -125,21 +189,30 @@ body {
 
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
+    
+    .mobile {
+        color: #000000;
+        display: none;
+    }
+    
+    .navbar-hamburger {
+        display: none;
+    }
 
 	.navbar-flexbox {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		margin-top: 2px;
-		margin-bottom: 2px;
+        padding-bottom: 20px;
 		width: 100%;
 		justify-content: center;
 		overflow: hidden;
 		
-		background-image: url("lib/IMG/backdrop.jpg");
+		background-image: url("lib/IMG/backdrop_new.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center 5%;
+		background-position: center center;
 		
 	}
 
@@ -155,7 +228,8 @@ body {
 		margin-bottom: 2.5px;
 		background-color: #f4f4f4;
 		cursor: pointer;
-
+		border-radius: 30px;
+		
 	}
 	
 	.navbar-flexbox #nav-logo {
@@ -190,9 +264,10 @@ body {
 	}
 	
 	.down {
+    display: block;
     text-align: center;
     width: 800px;
-    max-width: 95%;
+    max-width: 90%;
     margin: 0 auto;
   
     }
@@ -202,22 +277,39 @@ body {
     font-weight: bold;
     font-family: monospace;
     font-size: 5em;
-    max-width: 95%;
+    max-width: 100%;
+    margin-bottom: 0px;
     }
     
     .down p {
         border: 2px dotted #1b9600;
         padding: 20px 20px;
         font-size: 1.5em;
+        max-width: 100%;
+
     }
     
     .down h2 {
         font-size: 2.5em;
+        max-width: 100%;
     }
-
+    
+    .crew {
+        flex-direction: column;
+}
+    
 }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
+    
+    .mobile {
+        color: #000000;
+        display: none;
+    }
+    
+    .navbar-hamburger {
+        display: none;
+    }
 
 	.navbar-flexbox {
 		display: flex;
@@ -225,29 +317,31 @@ body {
 		flex-wrap: wrap;
 		margin-top: 2px;
 		margin-bottom: 2px;
+        padding-bottom: 20px;
 		width: 100%;
 		justify-content: center;
 		overflow: hidden;
 		
-		background-image: url("lib/IMG/backdrop.jpg");
+		background-image: url("lib/IMG/backdrop_new.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center 5%;
+		background-position: center center;
 		
 	}
 
 	.navbar-flexbox .navitem {
 		color: black;
-		padding: 15px 35px;
+		padding: 15px 5px;
 		text-align: center;
 		text-decoration: none;
 		font-family: monospace;
 		font-size: 1.5em;
-		width: 40%;
+		width: 85%;
 		margin-top: 2.5px;
 		margin-bottom: 2.5px;
 		background-color: #f4f4f4;
 		cursor: pointer;
+		border-radius: 8px;
 
 	}
 	
@@ -283,9 +377,9 @@ body {
 	}
 	
 	.down {
+    display: block;
     text-align: center;
-    width: 550px;
-    max-width: 95%;
+    width: 90%;
     margin: 0 auto;
   
     }
@@ -295,17 +389,21 @@ body {
     font-weight: bold;
     font-family: monospace;
     font-size: 4.5em;
-    max-width: 95%;
+    max-width: 100%;
+    margin-bottom: 0px;
     }
     
     .down p {
         border: 2px dotted #1b9600;
         padding: 20px 20px;
         font-size: 1.2em;
+        max-width: 100%;
+
     }
     
     .down h2 {
         font-size: 2.4em;
+        max-width: 100%;
     }
-
+    
 }
